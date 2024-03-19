@@ -5,18 +5,18 @@ return array(
         'adapters' => array(
             'dbConfig' => array(
                 'driver'   => 'Pdo_Mysql',
-                'database' => 'forewinv_crm_db',
-                'username' => 'forewinv_root',
-                'password' => 'forewin@123',
+                'database' => 'auto6972e5ad_crm_db',
+                'username' => 'auto6972e5ad_auto68',
+                'password' => 'auto68@123',
                 'hostname' => 'localhost',
                 'port'     => '',
                 'charset'  => 'utf8'
             ),
             'dbNotify' => array(
                 'driver'   => 'Pdo_Mysql',
-                'database' => 'forewinv_crm_notify',
-                'username' => 'forewinv_root',
-                'password' => 'forewin@123',
+                'database' => 'auto6972e5ad_crm_notify',
+                'username' => 'auto6972e5ad_auto68',
+                'password' => 'auto68@123',
                 'hostname' => 'localhost',
                 'port'     => '',
                 'charset'  => 'utf8'
