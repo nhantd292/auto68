@@ -1,5 +1,0 @@
-public/cache
-public/files/upload
-*.log
-*.zip
-config/autoload/global.php
