@@ -3,9 +3,9 @@
 chdir(dirname(__FILE__));
 
 // Key App
-define('CLIENT_ID',     '8a2df304-d217-45a0-9fcf-8448a3e6d9e0');
-define('CLIENT_SECRET', 'C83CEE5A62A2E9161640B8C0DBB61D70315B8220');
-define('RETAILER',      'forewin');
+define('CLIENT_ID',     '64abe26a-3265-4d92-a354-e93f3ddeb8f8');
+define('CLIENT_SECRET', 'A2B7112A54E8C99FA6BCD57063CDF79050F2C1E0');
+define('RETAILER',      'auto68');
 define('BANK_TECHCOMBANK',      '1706');
 
 // Key App
