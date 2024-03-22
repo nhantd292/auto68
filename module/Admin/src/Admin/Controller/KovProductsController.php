@@ -134,7 +134,7 @@ class KovProductsController extends ActionController{
 
                 if(isset($product['inventories'])){
                     foreach($product['inventories'] as $key => $inven){
-                        if(in_array($inven['branchId'], [13083, 3134])){
+//                        if(in_array($inven['branchId'], [13083, 3134])){
                             $item_inven = $this->getServiceLocator()->get('Admin\Model\KovProductBranchTable')->getItem(array('productId' => $inven['productId'], 'branchId' => $inven['branchId']));
                             if($item_inven){
                                 $iid = $this->getServiceLocator()->get('Admin\Model\KovProductBranchTable')->saveItem(array('data' => $inven), array('task' => 'update'));
@@ -142,7 +142,7 @@ class KovProductsController extends ActionController{
                             else{
                                 $iid = $this->getServiceLocator()->get('Admin\Model\KovProductBranchTable')->saveItem(array('data' => $inven), array('task' => 'add'));
                             }
-                        }
+//                        }
                     }
                 }
 
