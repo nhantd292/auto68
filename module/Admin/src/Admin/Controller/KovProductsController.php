@@ -23,7 +23,7 @@ class KovProductsController extends ActionController{
 
         $this->_params['ssFilter']['filter_keyword']        = $ssFilter->filter_keyword;
         $this->_params['ssFilter']['filter_categoryId']     = $ssFilter->filter_categoryId;
-        $this->_params['ssFilter']['filter_branches']       = $ssFilter->filter_branches ? $ssFilter->filter_branches : 3134;
+        $this->_params['ssFilter']['filter_branches']       = $ssFilter->filter_branches;
         $this->_params['ssFilter']['filter_evaluate']       = $ssFilter->filter_evaluate;
         $this->_params['ssFilter']['filter_tailors']        = $ssFilter->filter_tailors;
 

@@ -247,7 +247,7 @@ class ApiController extends ActionController {
         $itemPerpage = 30;
         $curentPage = $this->_params['data']['curentPage'] ? $this->_params['data']['curentPage'] : 1;
         $ssFilter = array(
-            'filter_branches'=> $this->_userInfo->getUserInfo('kov_branch_id'),
+//            'filter_branches'=> $this->_userInfo->getUserInfo('kov_branch_id'),
             'filter_status' => 1
         );
         if(!empty($this->_params['data']['categoriId']))
@@ -897,7 +897,7 @@ class ApiController extends ActionController {
                             'onHand'            => $inven['OnHand'],
                             'reserved'          => $inven['Reserved'],
                         );
-                        if(in_array($inven['BranchId'], [13083, 3134])){
+//                        if(in_array($inven['BranchId'], [13083, 3134])){
                             $item_inven = $this->getServiceLocator()->get('Admin\Model\KovProductBranchTable')->getItem(array('productId' => $inven['ProductId'], 'branchId' => $inven['BranchId']));
                             if($item_inven){
                                 $iid = $this->getServiceLocator()->get('Admin\Model\KovProductBranchTable')->saveItem(array('data' => $data_inven), array('task' => 'update'));
@@ -936,7 +936,7 @@ class ApiController extends ActionController {
                             if($iid){
                                 echo 'Cập nhật kho sản phẩm '.$inven['BranchName'].' - '.$inven['ProductName'].' thành công ';
                             }
-                        }
+//                        }
                     }
                 }
             }
